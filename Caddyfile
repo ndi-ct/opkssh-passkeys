@@ -1,0 +1,4 @@
+https://auth.example.space { # change to own domain
+    header Strict-Transport-Security max-age=31536000;
+    reverse_proxy localhost:1411
+}
