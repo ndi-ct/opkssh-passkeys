@@ -1,0 +1,25 @@
+services:
+  pocket-id:
+    image: ghcr.io/pocket-id/pocket-id
+    container_name: pocketid
+    restart: unless-stopped
+    ports:
+      - 1411:1411
+    volumes:
+      - "/volume1/docker/pocketid:/app/data"
+    environment:
+    - APP_URL=https://auth.example.com
+    - TRUST_PROXY=true
+    - PUID=1000
+    - PGID=1000
+  caddy:
+    image: caddy:alpine
+    restart: always
+    container_name: caddy
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./certs:/certs
+      - ./config:/config
+      - ./data:/data
+      - ./sites:/srv
+    network_mode: "host"
