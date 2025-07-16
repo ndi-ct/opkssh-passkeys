@@ -2,6 +2,12 @@
 
 ## Client
 
+Login
+
+```
+opkssh login --provider="https://auth.example.com,c451efee-d566-4359-876a-703014aacd97,,openid profile email groups"
+```
+
 ~/.opk/config.yml
 
 ```
