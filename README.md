@@ -1,4 +1,4 @@
-# Das ist ein begleitendes GitHub-Repository zum Artikel "Schluss mit Schlüsselchaos, Temporäre SSH-Schlüssel für Single Sign-on generieren", der in c't 22/2025 und [bei heise+](10639864) erschienen ist.
+# Das ist ein begleitendes GitHub-Repository zum Artikel "Schluss mit Schlüsselchaos, Temporäre SSH-Schlüssel für Single Sign-on generieren", der in c't 22/2025 und [bei heise+](https://heise.de/-10639864) erschienen ist.
 
 ## Konfiguration des Client:
 
