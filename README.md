@@ -1,12 +1,14 @@
-# opkssh-passkeys
+# Das ist ein begleitendes GitHub-Repository zum Artikel "Schluss mit Schlüsselchaos, Temporäre SSH-Schlüssel für Single Sign-on generieren", der in c't 22/2025 und [bei heise+](10639864) erschienen ist.
 
-## Client
+## Konfiguration des Client:
 
-Login
+Login beim Identity-Provider und Generierung der Schlüssel:
 
 ```
-opkssh login --provider="https://auth.example.com,c451efee-d566-4359-876a-703014aacd97,,openid profile email groups"
+opkssh login -i opkssh24h --provider="https://auth.example.com,Client-ID"
 ```
+
+Persistente Konfigurationsdatei:
 
 ~/.opk/config.yml
 
@@ -31,12 +33,16 @@ providers:
       - http://localhost:11110/login-callback
 ```
 
-## Server
+## Server-Konfiguration
+
+Wer darf sich mit welchem Benutzer einloggen:
 
 /etc/opkssh/auth-id
 ```
-root b1d50729-5ad5-42e6-b34c-d0c7142ef6d0 https://auth.example.com
+root cttest@example.com https://auth.example.com
 ```
+
+Identity-Provider und Client ID eintragen:
 
 /etc/opkssh/providers
 ```
