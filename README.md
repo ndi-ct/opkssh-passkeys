@@ -2,6 +2,13 @@
 
 Das ist ein begleitendes GitHub-Repository zum Artikel "Schluss mit Schlüsselchaos, Temporäre SSH-Schlüssel für Single Sign-on generieren", der in c't 22/2025 und [bei heise+](https://heise.de/-10639864) erschienen ist.
 
+<img width="1220" height="1075" alt="opkssh_pocket_id" src="https://github.com/user-attachments/assets/ab1a5625-ce4e-4c3d-b263-78ab148785f4" />
+
+Siehe auch:
+
+https://github.com/openpubkey/opkssh
+https://github.com/pocket-id/pocket-id
+
 ## Konfiguration des Client:
 
 Login beim Identity-Provider und Generierung der Schlüssel:
