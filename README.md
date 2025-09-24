@@ -7,6 +7,7 @@ Das ist ein begleitendes GitHub-Repository zum Artikel "Schluss mit Schlüsselch
 Siehe auch:
 
 https://github.com/openpubkey/opkssh
+
 https://github.com/pocket-id/pocket-id
 
 ## Konfiguration des Client:
